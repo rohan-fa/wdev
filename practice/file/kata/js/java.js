@@ -269,3 +269,36 @@
 
 // //4. Get total number in characters in all the character names
 
+//make it to string : 
+
+// const makeTOString = num => `${num}`;
+
+// console.log(makeTOString(243));
+
+// [7, 1]  =>  [1, 7]
+// [5, 8, 6, 3, 4]  =>  [3, 8, 6, 5, 4]
+
+// function sortArray(array) {
+//     // Return a sorted array.
+//     return array.sort();
+// }
+// console.log(sortArray([1,7,4,5,0]))
+
+// var array = [5, 3, 2, 8, 1, 4],
+//     indices = [];
+
+// array
+//     .filter((v, i) => v % 2 && indices.push(i))
+    
+//     .sort((a, b) => a - b)
+    
+//     .forEach((v, i) => array[indices[i]] = v);
+
+//     console.log(array)
+
+// function findShort(s){
+//     return Math.min(...s.split(" ").map (s => s.length));
+// }
+// Simple, given a string of words, return the length of the shortest word(s).
+
+// String will never be empty and you do not need to account for different data types.
