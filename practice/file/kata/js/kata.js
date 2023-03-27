@@ -79,21 +79,39 @@
 // console.log(solve([2,3,5,3,7,9,5,3,7]));
 
 function pinATM(pin){
-    let thePins = Number.pin
+    let num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    count = 0; 
+    let pinArr = pin.split("");
+
+    for(let i =0; i < pinArr.length; i++){
+        if(num.includes(pinArr[i])){
+            count += 1
+        }else{
+            false
+        }
+    }
+    return count == 4 || count ==6;
+
 }
+console.log(pinATM("1234")); 
+console.log(pinATM("12345")); 
+console.log(pinATM("a234")); 
 
-//has to be 4 or 6 digits all of that should be numbers
-//
+// function validatePIN (pin) {
+//     let num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+//     let count = 0;
+//     let pinArr = pin.split('');
+//     for (let i of pinArr) {
+//       if (num.includes(i)) {
+//         count += 1;
+//       } else {
+//         return false;
+//       }
+//     }
+//     return count == 4 || count == 6;
+//   }
 
-
-
-
-
-//console.log("1234")   -->  true
-//console.log("12345")  -->  false
-//console.log("a234")   -->  false
-
-
+  
 
 
 
